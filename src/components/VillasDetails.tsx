@@ -27,8 +27,8 @@ const DetailedVila = () => {
   return (
     <>
       <section className='w-full  mb-[8rem] mt-[5rem]'>
-        <article className='md:w-[80%] mx-auto flex gap-4 '>
-          <aside className='w-[90%]  mx-auto lg:w-[80%] md:mx-auto'>
+        <article className='md:w-[80%] mx-auto flex gap-[2.5rem] '>
+          <aside className='w-[90%]  mx-auto lg:w-[70%] md:mx-auto'>
             <section className='w-full'>
               <VillaCarousel />
             </section>

@@ -24,7 +24,7 @@ const DescriptionSection: React.FC<DescriptionSectionProps> = ({ desc }) => {
         <article className="flex flex-col items-start justify-start w-full">
           <div className="text-left py-2">
             <span className="font-navabarLinks font-bold text-[24px] text-[#373f41]">
-              Address: 
+              Address: &nbsp;
             </span>
             <p className="font-navabarLinks font-semibold text-[20px] text-[#737b7d] inline">
               {desc.Address}
@@ -36,7 +36,7 @@ const DescriptionSection: React.FC<DescriptionSectionProps> = ({ desc }) => {
         <article className="flex flex-col items-start justify-start w-full">
           <div className="text-left py-2">
             <span className="font-navabarLinks font-bold text-[24px] text-[#373f41]">
-              Contact No.: 
+              Contact No.&nbsp;: &nbsp; 
             </span>
             <p className="font-navabarLinks font-semibold text-[20px] text-[#737b7d] inline">
               {desc.Contact}
@@ -48,7 +48,7 @@ const DescriptionSection: React.FC<DescriptionSectionProps> = ({ desc }) => {
         <article className="flex flex-col items-start justify-start w-full">
           <div className="text-left py-2">
             <span className="font-navabarLinks font-bold text-[24px] text-[#373f41]">
-              Beds: 
+              Beds:&nbsp;
             </span>
             <p className="font-navabarLinks font-semibold text-[20px] text-[#737b7d] inline">
               {desc.Beds} Beds
@@ -60,7 +60,7 @@ const DescriptionSection: React.FC<DescriptionSectionProps> = ({ desc }) => {
         <article className="flex flex-col items-start justify-start w-full">
           <div className="text-left py-2">
             <span className="font-navabarLinks font-bold text-[24px] text-[#373f41]">
-              Check-In: 
+              Check-In: &nbsp; 
             </span>
             <p className="font-navabarLinks font-semibold text-[20px] text-[#737b7d] inline">
               {desc.Check_In}
@@ -72,7 +72,7 @@ const DescriptionSection: React.FC<DescriptionSectionProps> = ({ desc }) => {
         <article className="flex flex-col items-start justify-start w-full">
           <div className="text-left py-2">
             <span className="font-navabarLinks font-bold text-[24px] text-[#373f41]">
-              Check-Out: 
+              Check-Out: &nbsp;
             </span>
             <p className="font-navabarLinks font-semibold text-[20px] text-[#737b7d] inline">
               {desc.Check_Out}
