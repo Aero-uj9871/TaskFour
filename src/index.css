@@ -9,6 +9,7 @@
   --font-raleway: Raleway, "serif";
   --font-kanit: Kanit, "serif";
   --color-navTextCol: #373f41;
+  --color-navbg: rgba(60, 100, 177, 0.6);
   --text-semiheading: 32px;
 }
 html,body{
