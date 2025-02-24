@@ -45,9 +45,9 @@ const Navbar = () => {
               {label}
             </NavLink>
           ))}
-          <div className="bg-primary py-[0.6rem] px-[1.9rem] text-[0.85rem] h-[1rem] w-[5rem] md:h-[2.65rem] md:w-[7.06rem] font-navabarLinks font-bold text-white text-center flex items-center justify-center">
+          <button className="bg-primary py-[0.6rem] px-[1.9rem] text-[0.85rem] h-[1rem] w-[5rem] md:h-[2.65rem] md:w-[7.06rem] font-navabarLinks font-bold text-white text-center flex items-center justify-center">
             <Link to="/contactUs">Contact</Link>
-          </div>
+          </button>
         </div>
       </div>
 
@@ -72,17 +72,24 @@ const Navbar = () => {
             { to: "/villas", label: "Villas" },
             { to: "/services", label: "Services" },
             { to: "/partner", label: "Partner with us" },
-            { to: "/contactUs", label: "Contact" },
           ].map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
               onClick={() => setIsOpen(false)}
-              className="text-[#373f41] text-lg font-semibold hover:text-[#6d87cb] transition-colors"
+              className={({ isActive }) =>
+                `text-[0.85rem] font-semibold font-navabarLinks transition-colors duration-300 ${isActive
+                  ? "text-[#6d87cb] font-bold"
+                  : "text-[#373f41] hover:text-[#6d87cb]"
+                }`
+              }
             >
               {label}
             </NavLink>
           ))}
+          <button className="bg-primary py-4 px-[1.9rem] text-[0.85rem] h-[1rem] w-[5rem] md:h-[2.65rem] md:w-[7.06rem] font-navabarLinks font-bold text-white text-center flex items-center justify-center">
+            <Link to="/contactUs" onClick={() => setIsOpen(false)}>Contact</Link>
+          </button>
         </div>
       </div>
 

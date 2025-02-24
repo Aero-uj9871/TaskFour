@@ -6,13 +6,13 @@ type SideImagesProps = {
  
 const SideSection: React.FC<SideImagesProps> = ({ images }) => {
   return (
-    <section className="w-full h-[500px] overflow-y-auto p-2">
-      <article className="grid grid-cols-2 gap-4">
+    <section className="">
+      <article className="grid grid-cols-2 hy-auto gap-5">
         {images.map((image, index) => (
-          <div key={index} className="w-[155px] h-[110px] flex items-center justify-center bg-white rounded-lg overflow-hidden">
+          <div key={index} className="">
             <img
               src={image}
-              className="w-[155px] h-[110px] object-cover"
+              className=" h-[120px] rounded-md object-cover"
               alt={`Image ${index}`}
             />
           </div>

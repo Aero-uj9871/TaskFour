@@ -30,7 +30,7 @@ const VillaCard: React.FC<VillaCardProps> = ({ villa }) => {
 
 
                 {/* Villa Details Box */}
-                <div className="absolute bottom-[20%] md:bottom-[20%] lg:[25%] left-1/2 -translate-x-1/2 bg-white p-4 shadow-md rounded-sm w-[90%] mx-auto">
+                <div className="absolute bottom-[20%] md:bottom-[20%] lg:[25%] left-1/2 -translate-x-1/2 bg-white p-4 rounded-[6.1px] shadow-[0_7.6px_38px_0_rgba(0,0,0,0.07)] w-[90%] mx-auto">
                     <article className="flex flex-col space-y-2">
                         <header className="flex justify-between font-bold">
                             <h1 className="font-nunito font-bold text-4 text-[#3e3e3e] leading-[27.2px]">{villa.title}</h1>

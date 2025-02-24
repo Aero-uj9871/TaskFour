@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
 import about_img from '../assets/about.png'
 import featureImg from '../assets/section-3-img.png'
@@ -31,7 +32,7 @@ function Home() {
             </div>
             <Carousel />
             {/* lg:w-1/2  */}
-            <section className="py-30 home_about bg-[#ffffff]">
+            <section className="py-10 md:py-30 home_about bg-[#ffffff]">
                 <div className="w-[80%] mx-auto flex flex-col-reverse lg:flex-row gap-10 lg:gap-0">
                     <div className="home_about_img  flex justify-center"> {/* Image container */}
                         <img src={about_img} alt="About Us Image" className="w-full h-auto" /> {/* Make image responsive */}
@@ -96,19 +97,19 @@ function Home() {
                 <div className="md:w-[80%] md:px-15 lg:h-[70%] sm:p-10 w-full md:mx-auto">
                     <h2 className="font-kanit sm:text-wrap text-[28px] sm:text-semiheading font-normal text-[#373f41]">Title for the key features of the villa goes here</h2>
                     <p className="font-navabarLinks text-[15px] sm:text-[20px]  text-[#737b7d] mt-6">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    <div className="md:w-full md:py-5 mx-auto flex flex-col md:flex-row lg:gap-10 md:justify-between md:gap-5 lg:justify-between ul-lists md:flex items-center">
-                        <ul className="w-1/2 mt-4 p-0 sm:p-4 list-disc text-wrap md:text-nowrap">
+                    <div className="px-4 md:w-full md:py-5 mx-auto flex flex-col md:flex-row lg:gap-10 md:justify-between md:gap-5 gap-2 lg:justify-between ul-lists md:flex">
+                        <ul className="md:w-1/2 mt-4 p-0 sm:p-4 list-disc text-wrap md:text-nowrap">
                             <li className="text-[#3c64b1]"><span className="font-manrope text-[#000000] font-semibold">Tailored services</span></li>
                             <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Effortless arrivals</span></li>
                             <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Inspections and vetting</span></li>
                         </ul>
-                        <ul className="w-1/2 p-0 md:mt-4 sm:p-4 md:p-4 list-disc text-wrap md:text-nowrap">
+                        <ul className="md:w-1/2 p-0 md:mt-4 sm:p-4 md:p-4 list-disc text-wrap md:text-nowrap">
                             <li className="text-[#3c64b1]"> <span className="font-manrope text-[#000000] font-semibold">Expertly designed</span></li>
                             <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Luxury amenities</span></li>
                             <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Custom Itenaries</span></li>
                         </ul>
                     </div>
-                    <div className="mt-4 sm:mt-0 sm:p-0 flex w-full justify-start">
+                    <div className="mt-6 sm:mt-0 sm:p-0 flex w-full justify-start">
                     <button className="sm:mt-4 bg-[#6d87cb] text-[#ffffff] p-2">View Details</button>
                     </div>
                 </div>
@@ -134,15 +135,15 @@ function Home() {
                 </article>
             </section>
             <section className="p-8">
-                <article className="w-[90%] md:[75%] lg:w-[65%]  mx-auto">
+                <article className="w-full md:[75%] lg:w-[65%]  mx-auto">
                     <div className="feature_heading items-center">
                         <h2 className="text-center text-[24px] sm:text-semiheading font-normal font-kanit text-[#373f41]">Why Choose VillaCrest?</h2>
                     </div>
                     <div className="feature_text mt-6">
-                        <p className="text-center font-navabarLinks text-[15px] sm:text-[20px] text-wrap text-[#737b7d] px-10">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p className="text-center font-navabarLinks text-[15px] sm:text-[20px] text-wrap text-[#737b7d] px-5 md:px-10">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </div>
                     <div className="justify-center flex">
-                        <button className="mt-4 bg-[#6d87cb] text-[#ffffff] p-2 px-2">Contact</button>
+                        <button className="mt-4 bg-[#6d87cb] text-[#ffffff] py-3 px-7"><Link to="/contactUs">Contact</Link></button>
                     </div>
                 </article>
                 {/* <div className="feature_image text-center"><img src={featureImg} alt="" className="p-8 inline-block" /></div> */}

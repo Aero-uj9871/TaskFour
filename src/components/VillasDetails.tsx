@@ -13,6 +13,7 @@ import Property from './PropertyLayout'
 import Description from './Description'
 import Amenities from '../components/Amenities'
 import SideImages from '../components/SideSection';
+import HorCorousel from './HorCorousel';
 
 
 const DetailedVila = () => {
@@ -27,12 +28,15 @@ const DetailedVila = () => {
   return (
     <>
       <section className='w-full  mb-[8rem] mt-[5rem]'>
-        <article className='md:w-[80%] mx-auto flex gap-[2.5rem] '>
+        <article className='md:w-[80%] mx-auto flex gap-3 '>
           <aside className='w-[90%]  mx-auto lg:w-[70%] md:mx-auto'>
             <section className='w-full'>
               <VillaCarousel />
             </section>
-            <section className='w-full  shadow-lg mt-8 sm:mt-15'>
+ 
+ <section className='pt-4 w-full lg:hidden'><HorCorousel images={villa.images}/></section>
+
+            <section className='w-full  rounded-[6.1px] shadow-[0_7.6px_38px_0_rgba(0,0,0,0.07)] mt-8 sm:mt-15'>
               <article className="flex h-[165px] flex-col gap-3 p-8">
                 <header className="flex justify-between font-bold">
                   <h1 className="font-nunito font-bold text-[18px] md:text-[28px] text-[#3e3e3e] leading-[27.2px]">{villa.title}</h1>
@@ -78,7 +82,7 @@ const DetailedVila = () => {
 
 
           </aside>
-          <aside className=" hidden w-[30%] lg:block">
+          <aside className=" hidden w-[30%] lg:block h-[500px] overflow-y-scroll overflow-x-hidden">
             <SideImages images={villa.images} />
           </aside>
 

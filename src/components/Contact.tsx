@@ -9,13 +9,13 @@ import youtube from '../assets/yT.png'
 function Contact() {
     return (
         <div className=":relative items-center py-16 sm:py-20 lg:pl-16" >
-            <div className="contact-container lg:w-[82%] xl:w-[78%] mb-10 mx-auto sm:w-[80%] w-[95%]  bg-[#e2eaff] ">
+            <div className="contact-container lg:w-[82%] xl:w-[78%] mb-10 mx-auto sm:w-[80%] w-[90%]  bg-[#e2eaff] ">
                 <article className="flex flex-col lg:flex-row items-center justify-center md:relative pt-10 md:pt-12">
 
                     <div className="contact-details lg:absolute bg-white shadow-xl lg:w-[45%] lg:h-[65%]
                           left-[-7%] lg:transform-translate-y-1/2
                            border border-gray-200 sm:w-[75%] w-[95%] mx-auto" >
-                        <div className="p-5 sm:p-6 md:p-10 lg:p-6">
+                        <div className="p-8 sm:p-6 md:p-10 lg:p-6">
                             <h3 className="font-kanit  sm:text-[32px] text-[28px] text-[#002856] font-medium mb-4 text-left">Contact Details</h3>
                             <div className="space-y-5 md:py-4">
                                 <div className="flex flex-row justify-baseline space-x-3 items-start">
@@ -36,9 +36,9 @@ function Contact() {
                             </div>
 
                             <div className="flex mt-7 space-x-4 mt- items-left">
-                                <img src={ig} alt="" />
-                                <img src={youtube} alt="" />
-                                <img src={fb} alt="" />
+                                <img src={ig} alt="" onClick={()=> window.open("https://www.instagram.com")} />
+                                <img src={youtube} alt="" onClick={()=> window.open("https://www.youtube.com")} />
+                                <img src={fb} alt="" onClick={()=> window.open("https://www.facebook.com")} />
                             </div>
                         </div>
                     </div>

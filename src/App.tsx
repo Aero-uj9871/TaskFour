@@ -8,6 +8,7 @@ import About from "./components/About";
 import Villas from "./components/Villas";
 import VillasDetails from "./components/VillasDetails"
 import Contact from "./components/Contact";
+import Partner from "./components/Partner";
 // import Contact from "./components/Contact";
 // import Services from "./components/Services";
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/villas" element={<Villas />}></Route>
           <Route path ="/villas-details" element={<VillasDetails />}></Route>
           <Route path="/contactUs" element={<Contact />}></Route>
+          <Route path="/partner" element = {<Partner />}></Route>
           <Route path="/villa/:id" element={<VillasDetails />} />
         </Routes> 
       <Footer />

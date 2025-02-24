@@ -16,14 +16,14 @@ const Carousel = () => {
     };
  
     return (
-        <div className="relative mx-auto mt-16 w-[80%] mb-2 pb-3">
+        <div className="relative mx-auto mt-16 w-[90%] sm:w-[80%] mb-2 pb-3">
             {/* Image Container with LOWER HEIGHT */}
-            <div className="relative h-70 sm:h-84 md:h-84 lg:h-72 pb-4 overflow-x-hidden rounded-lg">
+            <div className="relative h-50 sm:h-84 md:h-84 lg:h-78 pb-4 overflow-x-hidden">
                 {images.map((image, index) => (
                     <img
                         key={index}
                         src={image}
-                        className={`absolute block w-full h-full object-cover transition-opacity duration-700 ${
+                        className={`absolute block w-full h-[90%]  rounded-lg object-cover transition-opacity duration-700 ${
                             index === activeIndex ? 'opacity-100' : 'opacity-0'
                         }`}
                         alt={`Slide ${index + 1}`}
@@ -32,7 +32,7 @@ const Carousel = () => {
             </div>
  
             {/* Indicator Dots */}
-            <div className="absolute p-2 z-30 flex space-x-2 bottom-4 left-1/2 -translate-x-1/2">
+            <div className="absolute p-6 lg:p-10 z-30 flex space-x-2 bottom-4 left-1/2 -translate-x-1/2">
                 {images.map((_, index) => (
                     <button
                         key={index}
