@@ -32,7 +32,7 @@ const Carousel = () => {
             </div>
  
             {/* Indicator Dots */}
-            <div className="absolute p-6 lg:p-10 z-30 flex space-x-2 bottom-4 left-1/2 -translate-x-1/2">
+            <div className="absolute p-6 sm:p-10 lg:p-10 z-30 flex space-x-2 bottom-4 left-1/2 -translate-x-1/2">
                 {images.map((_, index) => (
                     <button
                         key={index}
