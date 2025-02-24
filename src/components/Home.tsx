@@ -93,18 +93,18 @@ function Home() {
             </section>
             {/*title section */}
             <section className="">
-                <article className="flex mx-auto flex-col md:w-[90%] lg:flex-row w-[80%] mt-12 mb-12 gap-10" >
-                <div className="md:w-[80%] md:px-15 lg:h-[70%] sm:p-10 w-full md:mx-auto">
+                <article className="flex mx-auto flex-col lg:w-[85%] lg:flex-row sm:w-[80%] md:w-full w-[80%] mt-12 mb-12 gap-10" >
+                <div className="w-full md:w-[80%] lg:h-[70%] md:mx-auto">
                     <h2 className="font-kanit sm:text-wrap text-[28px] sm:text-semiheading font-normal text-[#373f41]">Title for the key features of the villa goes here</h2>
                     <p className="font-navabarLinks text-[15px] sm:text-[20px]  text-[#737b7d] mt-6">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    <div className="px-4 md:w-full md:py-5 mx-auto flex flex-col md:flex-row lg:gap-10 md:justify-between md:gap-5 gap-2 lg:justify-between ul-lists md:flex">
-                        <ul className="md:w-1/2 mt-4 p-0 sm:p-4 list-disc text-wrap md:text-nowrap">
+                    <div className="px-2 lg:px-4 md:w-full md:py-5 mx-auto flex flex-col md:flex-row lg:gap-10 md:justify-between md:gap-5 gap-2 lg:justify-between ul-lists md:flex">
+                        <ul className="md:w-1/2 mt-4 p-0 pb-0 sm:p-4 list-disc text-wrap md:text-nowrap">
                             <li className="text-[#3c64b1]"><span className="font-manrope text-[#000000] font-semibold">Tailored services</span></li>
                             <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Effortless arrivals</span></li>
-                            <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Inspections and vetting</span></li>
+                            <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000]  font-semibold">Inspections and vetting</span></li>
                         </ul>
-                        <ul className="md:w-1/2 p-0 md:mt-4 sm:p-4 md:p-4 list-disc text-wrap md:text-nowrap">
-                            <li className="text-[#3c64b1]"> <span className="font-manrope text-[#000000] font-semibold">Expertly designed</span></li>
+                        <ul className="md:w-1/2 pt-0 md:mt-4 sm:p-4 md:p-4 list-disc text-wrap md:text-nowrap">
+                            <li className="text-[#3c64b1]"> <span className="font-manrope text-[#000000]  font-semibold">Expertly designed</span></li>
                             <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Luxury amenities</span></li>
                             <li className="text-[#3c64b1] mt-2"><span className="font-manrope text-[#000000] font-semibold">Custom Itenaries</span></li>
                         </ul>
