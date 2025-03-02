@@ -85,7 +85,7 @@ function Home() {
                 <div className="mx-auto my-auto"><img src={cleanerImg} className="sm:p-16 h-[50%] " alt="" /></div>
             </section>
             <section className="text-center sm:text-left p-8 bg-[#ffffff] flex flex-col-reverse lg:flex-row">
-                <div className="w-[90%] lg:w-[50%] mx-auto my-auto"><img src={repairImg} className="sm:p-16 h-fit" alt="" /></div>
+                <div className="w-[90%] lg:w-[50%] mx-auto my-auto  mt-12 md:mt-4"><img src={repairImg} className="sm:p-16 h-fit" alt="" /></div>
                 <div className="sm:p-12 mx-auto md:w-full lg:mx-0 lg:w-[50%]">
                     <h2 className="font-kanit text-wrap text-[28px] sm:text-semiheading font-normal text-[#373f41]  md:pr-8">Maintenance & Repairs</h2>
                     <p className="font-navabarLinks text-wrap text-[15px] sm:text-[20px] text-justify text-[#737b7d] mt-6">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
